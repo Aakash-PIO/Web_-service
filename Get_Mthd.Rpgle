@@ -34,7 +34,7 @@
       **=============MAIN PROGRAM START===============================**
       **
       /Free
-      **                 SETTING HEADER IN HTML
+      **                 
       **
          DATA = 'Content-type: Text/html' + CRLF + CRLF ;
          writetoweb(DATA: %len(%trim(DATA)): ErrDs);
@@ -54,7 +54,7 @@
                     'EMPLOYEE MOBILE NO:'+(%CHAR(EMPMOB))+CRLF +
                     'EMPLOYEE DEPARTMENT:'+EMPDPT+CRLF;
            ELSE;
-             DATA = 'INVALID USER ID';
+             DATA = 'INVALID EMPLOYEE ID';
            ENDIF;
       **
          ON-ERROR;
