@@ -1,5 +1,5 @@
  **
-      **==============Header======================================**
+      **============== Header ======================================**
       **
      H DFTACTGRP(*NO) ACTGRP(*NEW) BNDDIR('AAKASH/B10':'QC2LE')
       **
@@ -7,20 +7,20 @@
       **
      FEmp_mast1 IF A E           K DISK
       **
-      *---------Procedure declaration for GET command on web----------*
+      **==================Procedure declaration  =================**
       **
      DGetenv           PR              *   ExtProc('getenv')
      D var                             *   value Options(*string)
       **
 
-      *---------Procedure declaration for write data on web-----------*
+      **============Procedure Declaration ===========================**
       **
      Dwritetoweb       PR                  ExtProc('QtmhWrStout')
      D Datavar                    65535A   Options(*varsize)
      D Datavarlen                    10I 0 const
      D Errorcode                   8000A   Options(*Varsize)
       **
-      *-------Error data structure used as a parameter for errcode----*
+      **==============Error Data Structure ==========================**
       **
      DErrDs            DS                  Qualified
      D BytesProv                     10I 0 Inz(0)
@@ -29,7 +29,7 @@
       **
        /COPY QSYSINC/QRPGLESRC,QUSEC
 
-      *---------Procedure declaration for POST command on web---------*
+      **=============Procedure Declaration ===============**
       **
      DReadStdInput     pr                  ExtProc('QtmhRdStin')
      D szRtnBuffer                65535A   Options(*varsize)
@@ -37,7 +37,7 @@
      D nRtnLen                       10I 0
      D QUSEC                               like(QUSEC)
       **
-      * --------------------- VARIABLE -------------------------------*
+      **==================VARIABLE ==================================**
       **
      D CRLF            C                   x'0d25'
      D DATA            S           5000A
@@ -57,7 +57,7 @@
      D FLAG            s              3S 0 INZ(0)
 
       **
-      *--------------Main Program---------------*
+      **====================Main Program===========================**
       **
       /Free
       **
