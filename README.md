@@ -41,4 +41,4 @@ PUT:
 webput: Consuming PUT to update name/gender/status information as per ID from : https://gorest.co.in/public/v1/comments/
 DELETE
 
-webdlt: Consuming DELETE to delete information for per ID from : https://gorest.co.in/public/v1/todos
+webdlt: Consuming DELETE to delete information for per ID from : https://gorest.co.in/public/v1/tod
